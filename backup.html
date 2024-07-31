@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="form_style.css" media="screen" />
+    <script src="js/app.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>B.E.P Automatizado</title>
+    <link rel="shortcut icon" href="img/logo.ico" type="image/x-icon">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-secondary">
+        <div class="container">
+            <a class="navbar-brand atual" href="index.html">B.E.P</a>
+            <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>-->
+            <div class="collapse navbar-collapse" id="navbarNav"> 
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                <a class="nav-link" href="https://sites.google.com/view/bepoguia/autores
+                ">Home</span></a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="https://padrao-nbr-iso.web.app/
+                ">Padra-nbr-iso</a>
+                </li>
+            </ul>
+            </div>
+        </div>
+      </nav>
+
+    <div class="btn-group btn-group-toggle mt-2" data-toggle="buttons">
+        <label class="btn btn-secondary active">
+          <input type="radio" name="options" id="option1" autocomplete="off"> Tabela 1
+        </label>
+        <label class="btn btn-secondary">
+          <input type="radio" name="options" id="option2" autocomplete="off"> Tabela 2
+        </label>
+        <label class="btn btn-secondary">
+          <input type="radio" name="options" id="option3" autocomplete="off"> Tabela 3
+        </label>
+        <label class="btn btn-secondary">
+            <input type="radio" name="options" id="option4" autocomplete="off"> Tabela 4
+        </label>
+        <label class="btn btn-secondary">
+            <input type="radio" name="options" id="option5" autocomplete="off"> Tabela 5
+        </label>
+        <label class="btn btn-secondary">
+            <input type="radio" name="options" id="option6" autocomplete="off"> Tabela 6
+        </label>
+        <label class="btn btn-secondary">
+            <input type="radio" name="options" id="option7" autocomplete="off"> Tabela 7
+        </label>
+        <label class="btn btn-secondary">
+            <input type="radio" name="options" id="option8" autocomplete="off"> Tabela 8
+        </label>
+        <label class="btn btn-secondary">
+            <input type="radio" name="options" id="option9" autocomplete="off"> Tabela 9
+        </label>
+        <label class="btn btn-secondary">
+            <input type="radio" name="options" id="option10" autocomplete="off"> Tabela 10
+        </label>
+    </div>
+
+    <div class="btn-group btn-group-toggle" data-toggle="buttons">
+        <label class="btn btn-secondary">
+            <input type="radio" name="options" id="option11" autocomplete="off"> Tabela 11
+        </label>
+        <label class="btn btn-secondary">
+            <input type="radio" name="options" id="option12" autocomplete="off"> Tabela 12
+        </label>
+        <label class="btn btn-secondary">
+            <input type="radio" name="options" id="option13" autocomplete="off"> Tabela 13
+        </label>
+        <label class="btn btn-secondary">
+            <input type="radio" name="options" id="option14" autocomplete="off"> Tabela 14
+        </label>
+        <label class="btn btn-secondary">
+            <input type="radio" name="options" id="option15" autocomplete="off"> Tabela 15
+        </label>
+        
+        <label class="btn btn-secondary">
+            <input type="radio" name="options" id="option17" autocomplete="off"> Tabela 16
+        </label>
+        <label class="btn btn-secondary">
+            <input type="radio" name="options" id="option18" autocomplete="off"> Tabela 17
+        </label>
+        <label class="btn btn-secondary">
+            <input type="radio" name="options" id="option19" autocomplete="off"> Tabela 18
+        </label>
+        <label class="btn btn-secondary">
+            <input type="radio" name="options" id="option16" autocomplete="off"> Adição/Remoção de itens
+        </label>
+    </div>
+
+    <div class="container my-3 bg-light border_container">
+        <div class="d-flex">
+            <div class="w-100" id="conteudo">
+                <form action="valida_form.php?t=0" method="post">
+
+                    <h3 class="my-2">1-Informações do projeto</h3>
+                    
+                    <table align=center id="tabela1">
+                        <tr>
+                            <td><input type="text" name="tb1_numero_projeto[]" placeholder="Número Projeto"></td>
+                            <td><input type="text" name="tb1_construcao_numero[]" placeholder="Construção Número do projeto"></td>
+                            <td><input type="text" name="tb1_projeto_arquitetonico[]" placeholder="Projeto Arquitetônico"></td>
+                            <td><input type="text" name="tb1_projeto_estrutural[]" placeholder="Projeto Estrutural"></td>
+                            <td><input type="text" name="tb1_projeto_hidrosanitario[]" placeholder="Projeto Hidrosanitario"></td>
+                        </tr>
+                    </table>
+
+                    <div>
+                        <input type="button" onclick="add_row1('tabela1');" value="+" class="btn btn-dark my-3">
+                    </div>
+                    
+                    <h3 class="my-2">2-Informações de contatos</h3>
+                    <table align=center id="tabela2"> 
+                    <tr>
+                        <td><input type="text" name="tb2_profissao[]" placeholder="Profissão"></td>
+                        <td><input type="text" name="tb2_organizacao[]" placeholder="Organização"></td>
+                        <td><input type="text" name="tb2_contato[]" placeholder="Contato"></td>
+                        <td><input type="text" name="tb2_localidade[]" placeholder="Localidade"></td>
+                        <td><input type="text" name="tb2_email[]" placeholder="E-mail"></td>
+                        <td><input type="text" name="tb2_numero[]" placeholder="Número"></td>
+                    </tr>
+                    </table>
+
+                    <input type="button" onclick="add_row2('tabela2');" value="+" class="btn btn-dark my-3">
+
+                    <h3 class="my-2">3-Objetivos da construtora</h3>
+                    <table id="tabela3" align=center>
+                    <tr>
+                        <td><input type="text" name="tb3_objetivo[]" placeholder="Objetivo"></td>
+                        <td><input type="text" name="tb3_observações[]" placeholder="Observaçôes"></td>
+                    </tr>
+                    </table>
+
+                    <input type="button" onclick="add_row3('tabela3');" value="+" class="btn btn-dark my-3">
+
+                    <h3 class="my-2">4-Usos BIM
+                    </h3>
+                    <table id="tabela4" align=center>
+                    <tr>
+                        <td><input type="text" name="tb4_peso[]" placeholder="Peso"></td>
+                        <td><input type="text" name="tb4_descricao[]" placeholder="Descrição"></td>
+                        <td><input type="text" name="tb4_uso[]" placeholder="Uso bim"></td>
+                    </tr>
+                    </table>
+
+                    <input type="button" onclick="add_row4('tabela4');" value="+" class="btn btn-dark my-3">
+
+                    <h3 class="my-2">5-Modelos necessários</h3>
+                    <table id="tabela5" align=center>
+                    <tr>
+                        <td><input type="text" name="tb5_nome[]" placeholder="Nome do modelo"></td>
+                        <td><input type="text" name="tb5_conteudo[]" placeholder="Conteudo do Modelo"></td>
+                        <td><input type="text" name="tb5_fase[]" placeholder="Fase do Projeto"></td>
+                        <td><input type="text" name="tb5_autor[]" placeholder="Autor"></td>
+                        <td><input type="text" name="tb5_ferramenta[]" placeholder="Ferramenta(Software)"></td>
+                    </tr>
+                    </table>
+
+                    <input type="button" onclick="add_row5('tabela5');" value="+" class="btn btn-dark my-3">
+
+                    <h3 class="my-2">6-Profissões do projeto</h3>
+                    <table id="tabela6" align=center>
+                    <tr>
+                        <td><input type="text" name="tb6_profissão[]" placeholder="Profissão"></td>
+                        <td><input type="text" name="tb6_nome[]" placeholder="Nome"></td>
+                        <td><input type="text" name="tb6_observacoes[]" placeholder="Observações"></td>
+                    </tr>
+                    </table>
+
+                    <input type="button" onclick="add_row6('tabela6');" value="+" class="btn btn-dark my-3">
+                    
+
+                    <h3 class="my-2">7-Objetivos coorporativos</h3>
+                    <table id="tabela7" align=center>
+                    <tr>
+                        <td><input type="text" name="tb7_verbo[]" placeholder="Verbo no infinitivo"></td>
+                        <td><input type="text" name="tb7_porc[]" placeholder="X%"></td>
+                        <td><input type="text" name="tb7_observacoes[]" placeholder="Observações"></td>
+                    </tr>
+                    </table>
+
+                    <input type="button" onclick="add_row7('tabela7');" value="+" class="btn btn-dark my-3">
+
+                    <h3>8-LOD</h3>
+                    <table id="tabela8" align=center>
+                    <tr>
+                        <td><input type="text" name="tb8_projeto[]" placeholder="Projeto"></td>
+                        <td><input type="text" name="tb8_categoria[]" placeholder="Categoria"></td>
+                        <td><input type="text" name="tb8_LOD[]" placeholder="LOD"></td>
+                        <td><input type="text" name="tb8_descricao[]" placeholder="Descrição"></td>
+                        <td><input type="text" name="tb8_ferramenta[]" placeholder="Ferramenta(Software)"></td>
+                    </tr>
+                    </table>
+
+                    <input type="button" onclick="add_row8('tabela8');" value="+" class="btn btn-dark my-3">
+
+                    <h3 class="my-2">9-LOD-G Classificação e interpretação BIM Fórum</h3>
+                    <table id="tabela9" align="center">
+                        <tr>
+                            <td><input type="text" name="tb9_categoria[]" placeholder="Categoria"></td>
+                            <td><input type="text" name="tb9_norma[]" placeholder="Norma"></td>
+                            <td><input type="text" name="tb9_descricao[]" placeholder="Descrição"></td>
+                            <td><input type="text" name="tb9_ferramenta[]" placeholder="Ferramenta"></td>
+                        </tr>
+                    </table>
+
+                    <input type="button" onclick="add_row9('tabela9');" value="+" class="btn btn-dark my-3">
+
+                    <h3 class="my-2">10-Software e suas recomendações</h3>
+                    <table id="tabela10" align=center>
+                    <tr>
+                        <td><input type="text" name="tb10_nome[]" placeholder="Nome"></td>
+                        <td><input type="text" name="tb10_tipo[]" placeholder="Tipo"></td>
+                        <td><input type="text" name="tb10_requisitos[]" placeholder="Requisitos"></td>
+                        <td><input type="text" name="tb10_logo[]" placeholder="Logo"></td>
+                    </tr>
+                    </table>
+
+                    <input type="button" onclick="add_row10('tabela10');" value="+" class="btn btn-dark my-3">
+
+                    <h3 class="my-2">11-Hardware da Estação de Trabalho</h3>
+                    <div>
+                        <table id="tabela11" align=center >
+                        
+                        <tr class="my-1">
+                            <td><input type="text" name="tb11_sistema[]" placeholder="Configuração(Sistema)"></td>
+                            <td><input type="text" name="tb11_CPU[]" placeholder="Configuração(CPU)"></td>
+                            <td><input type="text" name="tb11_memoria[]" placeholder="Configuração(Memória)"></td>
+                            <td><input type="text" name="tb11_resolucao[]" placeholder="Configuração(Resolução)"></td>
+                            <td><input type="text" name="tb11_adaptador[]" placeholder="Configuração(Adaptador)"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" name="tb11_espaço[]" placeholder="Configuração(Espaço)"></td>
+                            <td><input type="text" name="tb11_apontador[]" placeholder="Configuração(Apontador)"></td>
+                            <td><input type="text" name="tb11_framework[]" placeholder="Configuração(Framework)"></td>
+                            <td><input type="text" name="tb11_navegador[]" placeholder="Configuração(Navegador)"></td>
+                            <td><input type="text" name="tb11_conectividade[]" placeholder="Configuração(Conectividade)"></td>
+                        </tr>
+                        </table>
+                    </div>
+                    <input type="button" onclick="add_row11('tabela11');" value="+" class="btn btn-dark my-3">
+
+                    <h3 class="my-2">12-Nomeação dos projetos</h3>
+                    <table id="tabela12" align=center>
+                    <tr>
+                        <td><input type="text" name="tb12_construtora[]" placeholder="Construtora"></td>
+                        <td><input type="text" name="tb12_empreendimento[]" placeholder="Empreendimento"></td>
+                        <td><input type="text" name="tb12_codigo[]" placeholder="Código"></td>
+                        <td><input type="text" name="tb12_tipo[]" placeholder="Tipo"></td>
+                        <td><input type="text" name="tb12_data[]" placeholder="Data"></td>
+                        <td><input type="text" name="tb12_extensao[]" placeholder="Extensão"></td>
+                    </tr>
+                    </table>
+
+                    <input type="button" onclick="add_row12('tabela12');" value="+" class="btn btn-dark my-3">
+
+                    <h3 class="my-2">13-Frequência de atualizações, Entregável, CDE</h3>
+                    <table id="tabela13" align=center>
+                    <tr id="row80">
+                        <td><input type="text" name="tb13_modelo[]" placeholder="Modelo"></td>
+                        <td><input type="text" name="tb13_frequencia[]" placeholder="Frequencia"></td>
+                        <td><input type="text" name="tb13_cde[]" placeholder="CDE"></td>
+                    </tr>
+                    </table>
+
+                    <input type="button" onclick="add_row13('tabela13');" value="+" class="btn btn-dark my-3">
+
+                    <h3 class="my-2">14-Hardware</h3>
+                    <table id="tabela14" align=center>
+                    <tr>
+                        <td><input type="text" name="tb14_hardware[]" placeholder="Hardware"></td>
+                        <td><input type="text" name="tb14_descricao[]" placeholder="Descrição"></td>
+                    </tr>
+                    </table>
+
+                    <input type="button" onclick="add_row14('tabela14');" value="+" class="btn btn-dark my-3">
+
+
+
+                    <h3 class="my-2">15-Controle de qualidade</h3>
+                    <table align=center id="tabela15">
+                    <tr>
+                        <td><input type="text" name="tb15_checks[]" placeholder="Checks"></td>
+                        <td><input type="text" name="tb15_descricao[]" placeholder="Descrição"></td>
+                        <td><input type="text" name="tb15_resposabilidade[]" placeholder="Responsabilidade"></td>
+                        <td><input type="text" name="tb15_software[]" placeholder="Software"></td>
+                        <td><input type="text" name="tb15_frequencia[]" placeholder="Frequência"></td>
+                    </tr>
+                    </table>
+
+                    <div>
+                        <input type="button" onclick="add_row15('tabela15');" value="+" class="btn btn-dark my-3">
+                    </div>
+
+                    <h3 class="my-2">16-Diretrizes de Modelagem</h3>
+                    <table id="tabela17" align=center>
+                    <tr>
+                        <td><input type="text" name="tb17_software[]" placeholder="Software de Modelagem"></td>
+                        <td><input type="text" name="tb17_modelo[]" placeholder="Modelo (formato)"></td>
+                        <td><input type="text" name="tb17_unidade_com[]" placeholder="Unidade de medida de comprimento"></td>
+                        <td><input type="text" name="tb17_unidade_vol[]" placeholder="Unidade de medida de volume"></td>
+                        <td><input type="text" name="tb17_unidade_area[]" placeholder="Unidade de medida de área"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="tb17_template[]" placeholder="Template a ser usado"></td>
+                        <td><input type="text" name="tb17_tamanho[]" placeholder="Tamanho do arquivo"></td>
+                        <td><input type="text" name="tb17_descricao[]" placeholder="Descrição"></td>
+                        <td><input type="text" name="tb17_planilhas[]" placeholder="Planilhas esperadas"></td>
+                        <td><input type="text" name="tb17_plantas[]" placeholder="Plantas e desenhos"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="tb17_reportes[]" placeholder="Reportes esperadas"></td>
+                        <td><input type="text" name="tb17_cronogramas[]" placeholder="Cronogramas "></td>
+                        <td><input type="text" name="tb17_versao[]" placeholder="Versão do IFC "></td>
+                    </tr>
+                    </table>
+
+                    <div>
+                        <input type="button" onclick="add_row17('tabela17');" value="+" class="btn btn-dark my-3">
+                    </div>
+
+                    <h3 class="my-2">17-Arquivos</h3>
+                    <table id="tabela18" align=center>
+                        <tr>
+                            <td><input type="text" name="tb18_uso[]" placeholder="USO BIM"></td>
+                            <td><input type="text" name="tb18_software[]" placeholder="Software e versão"></td>
+                            <td><input type="text" name="tb18_extensao[]" placeholder="Extensão"></td>
+                            <td><input type="text" name="tb18_data[]" placeholder="Data limite"></td>
+                            <td><input type="text" name="tb18_versao[]" placeholder="Versão do modelo(Revisão)"></td>
+                        </tr>
+                    </table>
+
+                    <div>
+                        <input type="button" onclick="add_row18('tabela18');" value="+" class="btn btn-dark my-3">
+                    </div>
+
+                    <h3 class="my-2">18-Tolerância</h3>
+                    <table id="tabela19" align=center>
+                        <tr>
+                            <td><input type="text" name="tb19_fase[]" placeholder="Fase"></td>
+                            <td><input type="text" name="tb19_disciplina[]" placeholder="Disciplina"></td>
+                            <td><input type="text" name="tb19_tolerancia[]" placeholder="Tolerância"></td>
+                        </tr>
+                    </table>
+
+                    <div>
+                        <input type="button" onclick="add_row19('tabela19');" value="+" class="btn btn-dark my-3">
+                    </div>
+
+                    <button type="submit" class="btn btn-dark btn-lg my-4">Enviar</button>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark mb-0 text-center " style="height: 100px; color: white; display: flex; justify-content: center; align-items: center;" >
+        <div>
+            &#169 2024 - Newton Junior
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/table_d.js"></script>
+
+</body>
+</html>

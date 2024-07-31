@@ -1,0 +1,22 @@
+<form action="valida_form.php?t=8" method="post">
+
+    <h3>8-LOD</h3>
+    <table id="tabela8" align=center>
+    <tr>
+        <td><input type="text" name="tb8_projeto[]" placeholder="Projeto"></td>
+        <td><input type="text" name="tb8_categoria[]" placeholder="Categoria"></td>
+        <td><input type="text" name="tb8_LOD[]" placeholder="LOD"></td>
+        <td><input type="text" name="tb8_descricao[]" placeholder="Descrição"></td>
+        <td><input type="text" name="tb8_ferramenta[]" placeholder="Ferramenta(Software)"></td>
+    </tr>
+    </table>
+
+    <div>
+        
+        <input type="button" onclick="add_row8('tabela8');" value="+" class="btn btn-dark my-3">
+    </div>
+    
+    <input type="button" value="Voltar" onClick="window.location.reload()" class="btn btn-dark my-3"> 
+    <button type="submit" class="btn btn-dark my-4">Enviar</button>
+
+</form>

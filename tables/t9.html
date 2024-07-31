@@ -1,0 +1,20 @@
+<form action="valida_form.php?t=9" method="post">
+
+    <h3 class="my-2">9-LOD-G Classificação e interpretação BIM Fórum</h3>
+    <table id="tabela9" align="center">
+        <tr>
+            <td><input type="text" name="tb9_categoria[]" placeholder="Categoria"></td>
+            <td><input type="text" name="tb9_norma[]" placeholder="Norma"></td>
+            <td><input type="text" name="tb9_descricao[]" placeholder="Descrição"></td>
+            <td><input type="text" name="tb9_ferramenta[]" placeholder="Ferramenta"></td>
+        </tr>
+    </table>
+
+    <div>
+        <input type="button" onclick="add_row9('tabela9');" value="+" class="btn btn-dark my-3">
+    </div>
+    
+    <input type="button" value="Voltar" onClick="window.location.reload()" class="btn btn-dark my-3"> 
+    <button type="submit" class="btn btn-dark my-4">Enviar</button>
+
+</form>

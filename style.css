@@ -1,0 +1,198 @@
+/* 
+060808
+EEEEFF
+AFAFBC
+707078
+1576F4
+ */
+body {
+    overflow: hidden;
+}
+html, body {
+    background-color: #ffffff;
+}
+
+header {
+    height: auto;
+    background-color: #060808;
+    color: white;
+    padding: 10px 0;
+    text-align: left;
+    position: relative;
+}
+.hd-text{
+    color: #EEEEFF;
+}
+
+.side-menu {
+    width: auto;
+    height: 95vh;
+    overflow-y: auto;
+    position: fixed;
+    top: 44px;
+    padding: 10px;
+    left: 0;
+    border-color: #060808;
+    border-right: 2px solid;
+    background-color: #EEEEFF;
+}
+.side-menu::-webkit-scrollbar {
+    width: 5px;
+}
+.side-menu::-webkit-scrollbar-track {
+    background: #EEEEFF;
+}
+.side-menu::-webkit-scrollbar-thumb {
+    background: #AFAFBC;
+    border-radius: 5px;
+}
+.side-menu::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.container {
+    margin: 0;
+    width: 100%;
+}
+.row {
+    align-items: center;
+    width: 100%;
+    border-bottom: 1px #000
+}
+.col {
+    padding-right: 0px;
+    width: 100%;
+    margin-top: 20px;
+}
+.col-md-1 {
+    padding-inline: 50px ;
+    width: 1px;
+}
+
+.loading {
+    text-align: center;
+    font-size: 20px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin: 20px;
+}
+.content {
+    overflow-y: auto;
+    height: calc(95vh - 44px);
+}
+#table::-webkit-scrollbar {
+    width: 8px; /* Example scrollbar width */
+}
+
+#table::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Example scrollbar track color */
+}
+
+#table::-webkit-scrollbar-thumb {
+    background: #888; /* Example scrollbar thumb color */
+    border-radius: 4px;
+}
+
+#table::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Example scrollbar thumb hover color */
+}
+
+.navbar {
+    background-color: #060808; 
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+.nav.nav-tabs {
+    background-color: #EEEEFF;
+}
+.nav-pills .nav-link.active {
+    border: 2px solid #1576F4; /* Add a border to the active tab */
+    background-color: transparent; /* Make the background transparent */
+    color: #1576F4; /* Ensure the text color remains */
+    margin-bottom: -1px;/* Keep the border radius as per your design */
+}
+.nav-pills .nav-link {
+    color: #1576F4; 
+    border: none;   
+}
+.nav-pills .nav-link:hover {
+    border: 2px solid #1576F4; /* Add the same border as the active tab */
+    background-color: transparent; /* Make the background transparent */
+    color: #1576F4; /* Ensure the text color remains */
+}
+
+.btn.btn-outline-secondary{
+    color: #EEEEFF;
+    border-color: #1576F4;
+    background-color: #1576F4;
+}.btn.btn-outline-secondary:hover {
+    background-color: #0E5AA7;
+}
+
+.helper {
+    height: 30px;
+    width: 30px;
+    border-radius: 30px;
+    border: 1px solid #AFAFBC;
+    background: #AFAFBC;
+}
+.tooltip-inner {
+    white-space: pre-line;
+}
+
+.retrieve-btn, .delete-btn {
+    width: 40px;
+    height: 40px;
+    color: white;
+    font-size: 20px;
+    border: none;
+    border-radius: 20%;
+    cursor: pointer;
+    margin: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.retrieve-btn {
+    background-color: #4CAF50;
+}
+.retrieve-btn:hover {
+    background-color: #45a049;
+}
+.delete-btn {
+    background-color: #f44336;
+}
+.delete-btn:hover {
+    background-color: #e53935;
+}
+
+
+/* table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    width: 20%;
+    border: 1px solid #000;
+    padding: 8px;
+    text-align: left;
+}
+th {
+    border: 1px solid #000;
+    background-color: #AFAFBC;
+    position: sticky;
+    top: -1px;
+    z-index: 1;
+}
+.btn-column {
+    width: 1%;
+  }
+tbody tr {
+    background-color: #EEEEFF;
+} */

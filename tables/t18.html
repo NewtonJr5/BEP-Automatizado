@@ -1,0 +1,22 @@
+<form action="valida_form.php?t=18" method="post">
+
+    <h3 class="my-2">17-Arquivos</h3>
+    <table id="tabela18" align=center>
+        <tr>
+            <td><input type="text" name="tb18_uso[]" placeholder="USO BIM"></td>
+            <td><input type="text" name="tb18_software[]" placeholder="Software e versão"></td>
+            <td><input type="text" name="tb18_extensao[]" placeholder="Extensão"></td>
+            <td><input type="text" name="tb18_data[]" placeholder="Data limite"></td>
+            <td><input type="text" name="tb18_versao[]" placeholder="Versão do modelo(Revisão)"></td>
+        </tr>
+    </table>
+
+    <div>
+        <input type="button" onclick="add_row18('tabela18');" value="+" class="btn btn-dark my-3">
+    </div>
+
+    
+    <input type="button" value="Voltar" onClick="window.location.reload()" class="btn btn-dark my-3"> 
+    <button type="submit" class="btn btn-dark my-4">Enviar</button>
+
+</form>

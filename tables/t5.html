@@ -1,0 +1,22 @@
+<form action="valida_form.php?t=5" method="post">
+
+    <h3 class="my-2">5-Modelos necessários</h3>
+    <table id="tabela5" align=center>
+    <tr>
+        <td><input type="text" name="tb5_nome[]" placeholder="Nome do modelo"></td>
+        <td><input type="text" name="tb5_conteudo[]" placeholder="Conteudo do Modelo"></td>
+        <td><input type="text" name="tb5_fase[]" placeholder="Fase do Projeto"></td>
+        <td><input type="text" name="tb5_autor[]" placeholder="Autor"></td>
+        <td><input type="text" name="tb5_ferramenta[]" placeholder="Ferramenta(Software)"></td>
+    </tr>
+    </table>
+
+    <div>
+
+        <input type="button" onclick="add_row5('tabela5');" value="+" class="btn btn-dark my-3">
+    </div>
+    
+    <input type="button" value="Voltar" onClick="window.location.reload()" class="btn btn-dark my-3"> 
+    <button type="submit" class="btn btn-dark my-4">Enviar</button>
+
+</form>

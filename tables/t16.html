@@ -1,0 +1,33 @@
+<form action="valida_form.php?t=16" method="post">
+
+    <h3 class="my-2">1-Remoção de itens</h3>
+    <table id="tabela16" align=center>
+    <tr>
+        <td><input type="text" name="tb16_nome[]" placeholder="Nome do Arquivo"></td>
+        <td><input type="text" name="tb16_item[]" placeholder="Item a ser removido"></td>
+        <td><input type="text" name="tb16_descricao[]" placeholder="Descrição/Justificativa"></td>
+        <td><input type="text" name="tb16_observacao[]" placeholder="Observação"></td>
+    </tr>
+    </table>
+
+    <div>
+        <input type="button" onclick="add_row16('tabela16');" value="+" class="btn btn-dark my-3">
+    </div>
+
+    <h3 class="my-2">2-Adição de itens</h3>
+    <table id="tabelaAdd" align=center>
+    <tr>
+        <td><input type="text" name="tbad_nome[]" placeholder="Nome do Arquivo"></td>
+        <td><input type="text" name="tbad_item[]" placeholder="Item a ser adicionado"></td>
+        <td><input type="text" name="tbad_descricao[]" placeholder="Descrição/Justificativa"></td>
+        <td><input type="text" name="tbad_observacao[]" placeholder="Observação"></td>
+    </tr>
+    </table>
+
+    <div>
+        <input type="button" onclick="add_rowad('tabelaAdd');" value="+" class="btn btn-dark my-3">
+    </div>
+    
+    <input type="button" value="Voltar" onClick="window.location.reload()" class="btn btn-dark my-3"> 
+    <button type="submit" class="btn btn-dark my-4">Enviar</button>
+</form>

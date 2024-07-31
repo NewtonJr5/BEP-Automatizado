@@ -1,4 +1,13 @@
-<!DOCTYPE html>
+<?php
+    for($i = 0; $i < count($_POST['tb3_objetivo']); $i++){
+        if($_POST['tb3_objetivo'][$i] == '' &&
+        $_POST['tb3_observações'][$i] == '') {
+            echo 'Preencha os campos';
+            exit();
+        }}
+
+    $html = 
+    "<!DOCTYPE html>
     <html lang='en'>
     <head>
         <meta charset='UTF-8'>
@@ -25,27 +34,30 @@
     </style>
         <title>Registros</title>
     </head>
-    <body>
-        <h3>1-Informações do projeto</h3>
-            <table class='tabela' border='1' align=center>
-                <tr>
-                    <th class='bg-primary'>Informações do projeto</th>
-                    <th class='bg-primary'>Numeração</th>
-                </tr>
-            <tr><td>Número Projeto</td>
-        <td>teste</td></tr>
-        <tr><td>Construção Número do Projeto</td><td></td></tr>
-        <tr><td>Projeto Arquitetônico</td><td></td></tr>
-        <tr><td>Projeto Estrutural</td><td></td></tr>
-        <tr><td>Projeto Hidrosanitario</td><td></td></tr>
-        </table>
-        <h3> 3-Objetivos da construtora </h3>
+    <body>";
+
+    $html .="
+        <h1> 3-Objetivos da construtora </h1>";
+
+    $html .="
         <table class='tabela' border='1' align=center>
             <tr>
                 <th class='bg-success'>Objetivo da Construtora</th>
                 <th class='bg-success'>Observações</th>
             </tr>
             
+";
+    
 
-            <tr><td>teste</td><td></td></tr>
-        </table>
+    for($i = 0; $i < count($_POST['tb3_objetivo']); $i++){
+
+        $html .='
+            <tr><td>'.$_POST['tb3_objetivo'][$i].'</td><td>'.$_POST['tb3_observações'][$i].'</td></tr>';
+    }
+    $html .= '
+        </table>';
+
+    $html .= "
+    </body>
+</html>";
+    file_put_contents('reg.html',$html);

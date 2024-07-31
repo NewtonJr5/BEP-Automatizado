@@ -1,0 +1,33 @@
+<form action="valida_form.php?t=17" method="post">
+
+    <h3 class="my-2">16-Diretrizes de Modelagem</h3>
+    <table id="tabela17" align=center>
+    <tr>
+        <td><input type="text" name="tb17_software[]" placeholder="Software de Modelagem"></td>
+        <td><input type="text" name="tb17_modelo[]" placeholder="Modelo (formato)"></td>
+        <td><input type="text" name="tb17_unidade_com[]" placeholder="Unidade de medida de comprimento"></td>
+        <td><input type="text" name="tb17_unidade_vol[]" placeholder="Unidade de medida de volume"></td>
+        <td><input type="text" name="tb17_unidade_area[]" placeholder="Unidade de medida de área"></td>
+    </tr>
+    <tr>
+        <td><input type="text" name="tb17_template[]" placeholder="Template a ser usado"></td>
+        <td><input type="text" name="tb17_tamanho[]" placeholder="Tamanho do arquivo"></td>
+        <td><input type="text" name="tb17_descricao[]" placeholder="Descrição"></td>
+        <td><input type="text" name="tb17_planilhas[]" placeholder="Planilhas esperadas"></td>
+        <td><input type="text" name="tb17_plantas[]" placeholder="Plantas e desenhos"></td>
+    </tr>
+    <tr>
+        <td><input type="text" name="tb17_reportes[]" placeholder="Reportes esperadas"></td>
+        <td><input type="text" name="tb17_cronogramas[]" placeholder="Cronogramas "></td>
+        <td><input type="text" name="tb17_versao[]" placeholder="Versão do IFC "></td>
+    </tr>
+    </table>
+
+    <div>
+        <input type="button" onclick="add_row17('tabela17');" value="+" class="btn btn-dark my-3">
+    </div>
+    
+    <input type="button" value="Voltar" onClick="window.location.reload()" class="btn btn-dark my-3"> 
+    <button type="submit" class="btn btn-dark my-4">Enviar</button>
+
+</form>

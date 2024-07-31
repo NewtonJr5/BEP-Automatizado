@@ -1,0 +1,19 @@
+<form action="valida_form.php?t=13" method="post">
+
+    <h3 class="my-2">13-Frequência de atualizações, Entregável, CDE</h3>
+    <table id="tabela13" align=center>
+    <tr id="row80">
+        <td><input type="text" name="tb13_modelo[]" placeholder="Modelo"></td>
+        <td><input type="text" name="tb13_frequencia[]" placeholder="Frequencia"></td>
+        <td><input type="text" name="tb13_cde[]" placeholder="CDE"></td>
+    </tr>
+    </table>
+
+    <div>
+        <input type="button" onclick="add_row13('tabela13');" value="+" class="btn btn-dark my-3">
+    </div>
+    
+    <input type="button" value="Voltar" onClick="window.location.reload()" class="btn btn-dark my-3"> 
+    <button type="submit" class="btn btn-dark my-4">Enviar</button>
+
+</form>

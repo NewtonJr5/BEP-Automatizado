@@ -1,0 +1,20 @@
+<form action="valida_form.php?t=10" method="post">
+
+    <h3 class="my-2">10-Software e suas recomendações</h3>
+    <table id="tabela10" align=center>
+    <tr>
+        <td><input type="text" name="tb10_nome[]" placeholder="Nome"></td>
+        <td><input type="text" name="tb10_tipo[]" placeholder="Tipo"></td>
+        <td><input type="text" name="tb10_requisitos[]" placeholder="Requisitos"></td>
+        <td><input type="text" name="tb10_logo[]" placeholder="Logo"></td>
+    </tr>
+    </table>
+
+    <div>
+        <input type="button" onclick="add_row10('tabela10');" value="+" class="btn btn-dark my-3">
+    </div>
+    
+    <input type="button" value="Voltar" onClick="window.location.reload()" class="btn btn-dark my-3"> 
+    <button type="submit" class="btn btn-dark my-4">Enviar</button>
+
+</form>

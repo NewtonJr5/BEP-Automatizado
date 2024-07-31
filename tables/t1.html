@@ -1,0 +1,21 @@
+<form action="valida_form.php?t=1" method="post">
+
+    <h3 class="my-2">1-Informações do projeto</h3>
+    <table align=center id="tabela1">
+        <tr>
+            <td><input type="text" name="tb1_numero_projeto[]" placeholder="Número Projeto"></td>
+            <td><input type="text" name="tb1_construcao_numero[]" placeholder="Construção Número do projeto"></td>
+            <td><input type="text" name="tb1_projeto_arquitetonico[]" placeholder="Projeto Arquitetônico"></td>
+            <td><input type="text" name="tb1_projeto_estrutural[]" placeholder="Projeto Estrutural"></td>
+            <td><input type="text" name="tb1_projeto_hidrosanitario[]" placeholder="Projeto Hidrosanitario"></td>
+        </tr>
+    </table>
+
+    <div>
+        
+        <input type="button" onclick="add_row1('tabela1');" value="+" class="btn btn-dark my-3">
+    </div>
+
+    <input type="button" value="Voltar" onClick="window.location.reload()" class="btn btn-dark my-3"> 
+    <button type="submit" class="btn btn-dark my-4">Enviar</button>
+</form>

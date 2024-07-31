@@ -1,0 +1,18 @@
+<form action="valida_form.php?t=14" method="post">
+
+    <h3 class="my-2">14-Hardware</h3>
+    <table id="tabela14" align=center>
+    <tr>
+        <td><input type="text" name="tb14_hardware[]" placeholder="Hardware"></td>
+        <td><input type="text" name="tb14_descricao[]" placeholder="Descrição"></td>
+    </tr>
+    </table>
+
+    <div>
+        <input type="button" onclick="add_row14('tabela14');" value="+" class="btn btn-dark my-3">
+    </div>
+    
+    <input type="button" value="Voltar" onClick="window.location.reload()" class="btn btn-dark my-3"> 
+    <button type="submit" class="btn btn-dark my-4">Enviar</button>
+
+</form>

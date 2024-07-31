@@ -1,12 +1,23 @@
+*{
+    font-family: "Myriad Pro","Helvetica Neue",Helvetica,Arial,Sans-Serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body
 {
- margin:0 auto;
- padding:0px;
- text-align:center;
- width:100%;
- font-family: "Myriad Pro","Helvetica Neue",Helvetica,Arial,Sans-Serif;
- background-color:#F9E79F;
-}
+
+   height: 100vh;
+    /* padding-bottom: 100px;
+    text-align:center; 
+    width:100%;
+    font-family: "Myriad Pro","Helvetica Neue",Helvetica,Arial,Sans-Serif;
+    background-color:#F9E79F;
+    position: relative;
+    min-height: 100vh;  */
+} 
+
 #wrapper
 {
  margin:0 auto;
@@ -14,22 +25,26 @@ body
  text-align:center;
  width:995px;
 }
+
 #wrapper h1
 {
  margin-top:50px;
  font-size:45px;
  color:#9A7D0A;
 }
+
 #wrapper h1 p
 {
  font-size:18px;
 }
+
 #employee_table input[type="text"]
 {
  width:120px;
  height:35px;
  padding-left:10px;
 }
+
 #form_div input[type="button"]
 {
  width:110px;
@@ -40,6 +55,7 @@ body
  border-radius:3px;
  color:white;
 }
+
 #form_div input[type="submit"]
 {
  margin-top:10px;
@@ -55,4 +71,63 @@ body
 .border_container {
     border-radius: 10px;
     border: 1px solid black;
+}
+
+.atual {
+    background-color: white;
+    border-radius: 10px;
+    color: black;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.menu-lateral 
+{
+    width: 300px;
+    height: 100%;
+    background-color: #EEEEFF;
+}
+
+.nav_text 
+{
+    color: white;
+    padding: 10px;
+}
+
+.nav_bg
+{
+    background-color: black;
+}
+
+footer 
+{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+} 
+
+.menu-lateral 
+{
+    width: 300px;
+    height: 100%;
+    background-color: #EEEEFF;
+    /* padding: 20px 0 40px; */
+}
+
+.ul_lateral
+{
+    /* list-style-type: none; */
+    height: 100%;
+}
+
+.item-menu :hover
+{
+    background-color: #D4AC0D;
+}
+
+.item-menu 
+{
+    width: 100%;
+    border: 1px solid black;
+    /* margin: 10px 0; */
 }

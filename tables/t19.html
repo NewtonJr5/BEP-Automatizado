@@ -1,0 +1,19 @@
+<form action="valida_form.php?t=19" method="post">
+
+    <h3 class="my-2">18-Tolerância</h3>
+    <table id="tabela19" align=center>
+        <tr>
+            <td><input type="text" name="tb19_fase[]" placeholder="Fase"></td>
+            <td><input type="text" name="tb19_disciplina[]" placeholder="Disciplina"></td>
+            <td><input type="text" name="tb19_tolerancia[]" placeholder="Tolerância"></td>
+        </tr>
+    </table>
+
+    <div>
+        <input type="button" onclick="add_row19('tabela19');" value="+" class="btn btn-dark my-3">
+    </div>
+    
+    <input type="button" value="Voltar" onClick="window.location.reload()" class="btn btn-dark my-3"> 
+    <button type="submit" class="btn btn-dark my-4">Enviar</button>
+
+</form>

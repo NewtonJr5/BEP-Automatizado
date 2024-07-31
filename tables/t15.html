@@ -1,0 +1,21 @@
+<form action="valida_form.php?t=15" method="post">
+
+    <h3 class="my-2">15-Controle de qualidade</h3>
+    <table align=center id="tabela15">
+    <tr>
+        <td><input type="text" name="tb15_checks[]" placeholder="Checks"></td>
+        <td><input type="text" name="tb15_descricao[]" placeholder="Descrição"></td>
+        <td><input type="text" name="tb15_resposabilidade[]" placeholder="Responsabilidade"></td>
+        <td><input type="text" name="tb15_software[]" placeholder="Software"></td>
+        <td><input type="text" name="tb15_frequencia[]" placeholder="Frequência"></td>
+    </tr>
+    </table>
+
+    <div>
+        <input type="button" onclick="add_row15('tabela15');" value="+" class="btn btn-dark my-3">
+    </div>
+    
+    <input type="button" value="Voltar" onClick="window.location.reload()" class="btn btn-dark my-3"> 
+    <button type="submit" class="btn btn-dark my-4">Enviar</button>
+
+</form>
